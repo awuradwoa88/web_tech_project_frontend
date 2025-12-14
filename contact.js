@@ -10,7 +10,7 @@ function submitForm() {
     return false;
   }
 
-  fetch("http://localhost:3000/api/contact", {
+  fetch("http://web-tech-project-backend-lguj.onrender.com/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
