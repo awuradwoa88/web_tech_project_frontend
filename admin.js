@@ -48,7 +48,7 @@ async function addBook() {
     return;
   }
 
-  await fetch("http://web-tech-project-backend-lguj.onrender.com/api/books", {
+  await fetch("https://web-tech-project-backend-lguj.onrender.com/api/books", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ title, category })
@@ -65,7 +65,7 @@ async function updateBook(id) {
   const title = document.getElementById(`title-${id}`).value;
   const category = document.getElementById(`cat-${id}`).value;
 
-  await fetch(`http://web-tech-project-backend-lguj.onrender.com/api/books/${id}`, {
+  await fetch(`https://web-tech-project-backend-lguj.onrender.com/api/books/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ title, category })
@@ -77,7 +77,7 @@ async function updateBook(id) {
 async function deleteBook(id) {
   if (!confirm("Delete this book?")) return;
 
-  await fetch(`http://web-tech-project-backend-lguj.onrender.com/api/books/${id}`, {
+  await fetch(`https://web-tech-project-backend-lguj.onrender.com/api/books/${id}`, {
     method: "DELETE"
   });
 

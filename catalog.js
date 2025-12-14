@@ -23,7 +23,7 @@ let borrowedBooks = [];
 async function loadBooks() {
   try {
     const res = await fetch(
-      `http://web-tech-project-backend-lguj.onrender.com/api/books?userId=${user.id}`
+      `https://web-tech-project-backend-lguj.onrender.com/api/books?userId=${user.id}`
     );
     const data = await res.json();
 
@@ -123,7 +123,7 @@ function renderSection(books, container, emptyText, borrowed, search, category) 
    ACTIONS
 ===================== */
 async function borrowBook(id) {
-  await fetch(`http://web-tech-project-backend-lguj.onrender.com/api/books/borrow/${id}`, {
+  await fetch(`https://web-tech-project-backend-lguj.onrender.com/api/books/borrow/${id}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ userId: user.id })
@@ -132,7 +132,7 @@ async function borrowBook(id) {
 }
 
 async function returnBook(id) {
-  await fetch(`http://web-tech-project-backend-lguj.onrender.com/api/books/return/${id}`, {
+  await fetch(`https://web-tech-project-backend-lguj.onrender.com/api/books/return/${id}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ userId: user.id })

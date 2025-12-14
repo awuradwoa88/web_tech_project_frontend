@@ -10,7 +10,7 @@ function submitForm() {
     return false;
   }
 
-  fetch("http://web-tech-project-backend-lguj.onrender.com/api/contact", {
+  fetch("https://web-tech-project-backend-lguj.onrender.com/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
