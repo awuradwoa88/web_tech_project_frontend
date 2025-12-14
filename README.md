@@ -1,7 +1,4 @@
-Perfect 👍
-Here is the same README, rewritten properly in Markdown using ##, ###, bullet points, and code blocks — ready to paste directly into README.md.
 
-⸻
 
 📚 ACITY Digital Library System
 
@@ -46,32 +43,19 @@ Students are redirected to the Book Catalog.
 
 ✅ Feature Checklist
 
-🔹 Authentication
-	•	Email and password login
-	•	Role-based redirection (Admin / Student)
-	•	Login session stored using localStorage
-
-🔹 Student Features
-	•	View available books
-	•	Search books by title
-	•	Filter books by category
-	•	Borrow books
-	•	Return borrowed books
-	•	View borrowed books list
-
-🔹 Admin Features
-	•	View all books
-	•	Add new books
-	•	Edit existing books
-	•	Delete books
-	•	Admin-only access control
-
-🔹 General
-	•	RESTful API with Express.js
-	•	PostgreSQL database integration
-	•	Backend deployed on Render
-	•	Frontend deployed on GitHub Pages
-	•	Clean and responsive UI
+Authentication & Book Submission (15 Marks)
+• Admin users can add, update, or delete books.
+• Students can register and log in.
+2. Book Catalogue 
+• Display all books 
+• Include search and filter options (category.
+3. Borrow & Return Management (15 Marks)
+• Allow students to request/borrow available books.
+• Track borrowed books with due dates.
+4. Deployment (15 Marks)
+• Backend: Node.js + PostgreSQL hosted on Render.
+• Frontend: Hosted on GitHub Pages.
+• Ensure both are connected and functional.
 
 ⸻
 
