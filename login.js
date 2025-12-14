@@ -1,32 +1,40 @@
-alert("login.js loaded");
 function loginUser() {
   console.log("loginUser called");
-  const username = document.getElementById("username").value.trim();
+
+  // Get form values
+  const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value.trim();
 
-  if (username === "" || password === "") {
-    alert("Please enter username and password");
+  // Basic validation
+  if (email === "" || password === "") {
+    alert("Please enter email and password");
     return false;
   }
 
+  // Send login request to backend
   fetch("http://localhost:3000/api/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({ username, password })
+    body: JSON.stringify({ email, password })
   })
     .then(res => res.json())
     .then(data => {
+      console.log("Login response:", data);
+
       if (data.user) {
+        // Save logged-in user
         localStorage.setItem("user", JSON.stringify(data.user));
+
+        // Redirect to catalog page
         window.location.href = "catalog.html";
       } else {
-        alert("Login failed");
+        alert("Invalid email or password");
       }
     })
     .catch(err => {
-      console.error(err);
+      console.error("Login error:", err);
       alert("Server error");
     });
 

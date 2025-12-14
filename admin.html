@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div class="top-actions">
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<h2>Admin – Book Management</h2>
+
+<div class="admin-form">
+  <input id="title" placeholder="Title">
+  <input id="category" placeholder="Category">
+  <button onclick="addBook()">Add Book</button>
+</div>
+
+<hr>
+
+<div id="books"></div>
+
+<script src="admin.js"></script>
+
+<script>
+  function logout() {
+    localStorage.removeItem("user");
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>

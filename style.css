@@ -1,205 +1,81 @@
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f6f6;
+  color: #222;
 }
+
 .main {
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(246, 248, 251, 0.8)), url('/frontend/images/library.jpg');
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(246, 248, 251, 0.8)), url('images/library.jpg');
   background-position: center;
   background-size: cover;
-  height: 109vh;
+  min-height: 100vh;
   padding: 20px;
-  width: 1500px;
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
-}
-
-.form {
-  width: 400px;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.8);
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.navbar {
-  width: 1200px;
-  height: 75px;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.icon {
-  width: 50px;
-  float: left;
-  height: 50px;
-
-}
-
-.logo {
-  
-  font-size: 24px;
-  font-weight: bold;
-  color: #620000;
-}
-
-.menu {
-  width: 400px;
-  float: left;
-  height: 70px;
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-ul{
-  float: left;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-ul li{
-  margin-top: 27px;
-  margin-left: 20px;
-  list-style: none;
-  font-size: 14px;
-  padding: 10px 15px;
-  font-weight: 500;
-  color: #000000;
-  cursor: pointer;
-}
-
-ul li a{
-  text-decoration: none;
-  color: #000000;
-  transition: 0.4s ease-in-out;
-}
-
-ul li a:hover{
-  color: #620000;
-}
-.search{
-  width: 330px;
-  
-  float: left;
-  margin-left: 270px;
-  
-  
-}
-
-.search-box{
-  font-family: 'Times New Roman', Times, serif;
-  width: 200px;
-  height: 40px;
-  border: 1px solid #620000;
-  margin-top: 13px;
-  color: #fff;
-  border-right: none;
-  font-size: 16px;
-  float: left;
-  padding: 10px;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  background: transparent;
-}
-.search-btn {
-  width: 100px;
-  height: 40px;
-  border: 2px solid #620000;
-  margin-top: 13px;
-  color: #fff;
-  outline: none;
-  background: #620000;
-  border-bottom-right-radius: 5px;
-  font-size: 15px;
-
-  transition: 0.4s ease-in-out;
-}
-.search-btn:focus {
-  outline: none;
-}
-
-.search-box:focus {
- outline: none;
-}
-
-.content {
-  width: 600px;
-  margin: auto;
+.main h1 {
   text-align: center;
-  color: #000000;
-  position: relative;
-  top: 100px;
-}
-
-.content .par{
-  padding-left: 20px;
-  padding-bottom: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 1.2px;
-  line-height: 30px;
-  text-align: center;
-  font-size: 20px;
-
-}
-
-.content h1{
+  margin-top: 40px;
   font-size: 100px;
-  margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  color: #620000;
-  text-align: center;
+  color: #6b1d14;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
-.form label {
-  font-size: 15px;
+.main p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #444;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+  color: #6b1d14;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #222;
   font-weight: 500;
-  margin-bottom: 10px;
-  display: block;
-  text-align: center;
 }
 
-h1 {
-  font-weight: 600;
-  text-align: center;
+.navbar nav a:hover {
+  color: #6b1d14;
 }
 
-h2 {
-  font-weight: 500;
-  text-align: center;
-}
 
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-/* ===== LOGIN PAGE ONLY ===== */
 
 .login-page {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f4f4;
-  font-family: Arial, sans-serif;
 }
 
 .login-page .main {
@@ -212,157 +88,168 @@ input, textarea {
   background: white;
   padding: 30px;
   width: 100%;
-  height: 45%;
-  max-width: 350px;
-  border-radius: 6px;
+  max-width: 360px;
+  border-radius: 8px;
   text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-.login-page .form h2 {
+.login-page h2 {
   margin-bottom: 20px;
 }
 
-.login-page .form label {
+.login-page label {
   display: block;
   margin-bottom: 5px;
 }
 
-.login-page .form input {
+.login-page input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   text-align: center;
-  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.login-page .form .btn {
+.login-page .btn {
   width: 100%;
   padding: 10px;
   background: #6b1d14;
   color: white;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-.login-page .form .btn:hover {
+.login-page .btn:hover {
   background: #8a2b20;
 }
 
 
 
 .catalog-page {
-  font-family: Arial, sans-serif;
-  
+  background: #f6f6f6;
+  padding-bottom: 60px;
 }
 
 
-.catalog-page .main {
-  max-width: 1100px;
-  margin: 0 auto;
+.catalog-header {
+  text-align: center;
   padding: 40px 20px;
 }
 
-
-.catalog-page header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.catalog-page header h1 {
-  margin-bottom: 10px;
-}
-
-.catalog-page header p {
-  color: #555;
+.catalog-header h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 
-.catalog-page .controls {
+.controls {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 30px;
 }
 
-.catalog-page .controls input,
-.catalog-page .controls select {
-  padding: 10px;
-  width: 200px;
+.controls input,
+.controls select {
+  padding: 12px;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 
-.catalog-page .catalog {
+.section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+
+.book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
 }
 
 
-.catalog-page .book {
+.book-card {
   background: white;
   padding: 20px;
-  border-radius: 6px;
+  border-radius: 10px;
   text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 230px;
 }
 
+.book-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
 
-.catalog-page .book h3 {
+.book-card .category {
+  font-size: 14px;
+  color: #777;
   margin-bottom: 10px;
 }
 
 
-.catalog-page .book p {
-  margin-bottom: 15px;
-  color: #555;
+.book-card .due {
+  font-size: 14px;
+  color: #b30000;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 
-.catalog-page .book button {
-  padding: 8px;
+.book-card button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
   background: #6b1d14;
   color: white;
-  border: none;
   cursor: pointer;
+  margin-top: 6px;
 }
 
-.catalog-page .book button:hover {
+.book-card button:hover {
   background: #8a2b20;
 }
 
 
+.admin-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.admin-actions button {
+  background: #444;
+}
+
+.admin-actions button:hover {
+  background: #222;
+}
+
+
+
 .contact-page {
-  font-family: Arial, sans-serif;
   background: #f4f4f4;
 }
 
 .contact-page header {
   text-align: center;
-  padding: 30px 20px;
-}
-
-.contact-page header h1 {
-  margin-top: 10px;
-}
-
-.contact-page header p {
-  color: #555;
-}
-
-.contact-page .nav {
-  margin-top: 15px;
-}
-
-.contact-page .nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
-}
-
-.contact-page .nav .active {
-  font-weight: bold;
+  padding: 20px 20px;
+  height: 30px;
 }
 
 .contact-page .main {
@@ -375,15 +262,12 @@ input, textarea {
   background: white;
   padding: 30px;
   width: 100%;
-  height: 50%;
   max-width: 400px;
-  border-radius: 6px;
+  border-radius: 8px;
 }
-
-.contact-page .contact-container {
-  display: flex;
-  flex-direction: column;
-  
+.contact-page h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .contact-page label {
@@ -396,7 +280,8 @@ input, textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .contact-page textarea {
@@ -404,21 +289,71 @@ input, textarea {
   min-height: 100px;
 }
 
-.contact-page .search-btn {
-  width: 100%;
+.contact-page button {
   padding: 10px;
   background: #6b1d14;
   color: white;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-
-.contact-page .search-btn:hover {
+.contact-page button:hover {
   background: #8a2b20;
 }
 
-.contact-page #feedback {
-  margin-top: 10px;
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
   text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,.08);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card button {
+  background: #6b1d14;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #8a2b20;
+}
+
+.due {
+  color: #b00020;
+  font-weight: bold;
+}
+
+
+.catalog-page .top-actions {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background: #6b1d14;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #8a2b20;
 }
