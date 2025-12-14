@@ -11,7 +11,7 @@ loadBooks();
 
 async function loadBooks() {
   try {
-    const res = await fetch("http://web-tech-project-backend-lguj.onrender.com/api/books/admin/all");
+    const res = await fetch("https://web-tech-project-backend-lguj.onrender.com/api/books/admin/all");
     const data = await res.json();
 
     if (!Array.isArray(data)) {
