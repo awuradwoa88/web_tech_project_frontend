@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page">
+
+  <header>
+    <h1>Digital Library Support</h1>
+
+    <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="catalog.html">Catalog</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  </header>
+  <div class="main">
+    <div class="form">
+    <div class="contact-container">
+    <form onsubmit="return submitForm()">
+      <h1>Contact Us</h1>
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+      <br>
+      <label>Email</label>
+      <input name="email" type="email" id="email" placeholder="Your email" required>
+      <br>
+       
+      <label>Message</label>
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <br>
+      <a href="#"> <button class ="search-btn" type ="submit">Send Message</button></a>
+      
+    </form>
+
+    <p id="feedback"></p>
+    </div> 
+
+    </div>
+    
+  </div>
+
+ 
+</body>
+</html>

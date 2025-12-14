@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class = "catalog-page">
+    <div class="main">
+    <header>
+    <h1>Digital Library Catalog</h1>
+    <p>Browse available books</p>
+    </header>
+
+  
+  <div class="controls">
+    <input
+      type="text"
+      id="search"
+      placeholder="Search books..."
+      onkeyup="filterBooks()"
+    >
+
+    <select id="category" onchange="filterBooks()">
+      <option value="all">All Categories</option>
+      <option value="programming">Programming</option>
+      <option value="networking">Networking</option>
+      <option value="database">Database</option>
+    </select>
+  </div>
+
+  
+  <div class="catalog" id="catalog">
+    <div class="book" data-category="programming">
+      <h3>Python Programming</h3>
+      <p>Category: Programming</p>
+      <button>View</button>
+    </div>
+
+    <div class="book" data-category="networking">
+      <h3>Computer Networks</h3>
+      <p>Category: Networking</p>
+      <button>View</button>
+    </div>
+
+    <div class="book" data-category="database">
+      <h3>Database Systems</h3>
+      <p>Category: Database</p>
+      <button>View</button>
+    </div>
+
+    <div class="book" data-category="programming">
+      <h3>Web Development Basics</h3>
+      <p>Category: Programming</p>
+      <button>View</button>
+    </div>
+  </div>
+
+  <script src="js/catalog.js"></script>
+    </div>
+</body>
+</html>
