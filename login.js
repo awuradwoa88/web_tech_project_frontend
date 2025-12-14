@@ -12,7 +12,7 @@ function loginUser() {
   }
 
   // Send login request to backend
-  fetch("http://localhost:3000/api/auth/login", {
+  fetch("https://web-tech-project-backend-lguj.onrender.com/api/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
